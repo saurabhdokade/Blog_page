@@ -1,6 +1,6 @@
 const User = require('../../modal/Users')
 const jwt = require('jsonwebtoken')
-const secreteKey = process.env.SecreteKey
+const secreteKey = process.env.SecreteKey || "SecreteKey"
 
 const authMiddleware = async (req, res, next) => {
 

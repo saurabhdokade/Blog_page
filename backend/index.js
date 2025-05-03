@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.use('/user', userRoute)
 app.use('/blog', blogRoute)
 
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect(process.env.DATABASE_URL || "mongodb://127.0.0.1:27017/Blog_App")
     .then(() => console.log("DB connected successfully"))
     .catch((err) => console.log("Failed to connect database ", err))
 

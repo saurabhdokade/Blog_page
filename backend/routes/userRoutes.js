@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const authMiddleware = require('../components/middleware/authMiddleware');
 //Register
 
-const secreteKey = process.env.SecreteKey
+const secreteKey = process.env.SecreteKey || "SecreteKey"
 
 router.post('/register', async (req, res) => {
     try {
