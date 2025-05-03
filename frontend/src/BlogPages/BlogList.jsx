@@ -4,7 +4,7 @@ import { FiEdit } from 'react-icons/fi'
 import { MdOutlineDeleteForever } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-
+import './BlogList.css'
 function BlogList() {
     const [loading, setLoading] = useState(false)
     const [data, setData] = useState([])
